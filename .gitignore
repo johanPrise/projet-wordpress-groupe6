@@ -1,0 +1,66 @@
+# WordPress Core
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/readme.html
+/license.txt
+
+# Configuration sensible
+wp-config.php
+.htaccess
+
+# Uploads et cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup*/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/ai1wm-backups/
+
+# Plugins et thèmes WordPress par défaut (à exclure si non modifiés)
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+wp-content/themes/twenty*/
+
+# Jetpack
+wp-content/jetpack-waf/
+
+# Logs et debug
+*.log
+error_log
+debug.log
+wp-content/debug.log
+
+# Base de données
+*.sql
+*.sql.gz
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node modules (si utilisation de npm dans thèmes/plugins)
+node_modules/
+npm-debug.log
+
+# Environnement Local by Flywheel
+local-xdebuginfo.php
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Composer (si non utilisé)
+/vendor/
+composer.lock
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.old
