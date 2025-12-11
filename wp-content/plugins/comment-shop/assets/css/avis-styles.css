@@ -1,0 +1,260 @@
+/**
+ * Styles pour l'extension Comment Shop - Témoignages Clients
+ * Version optimisée pour témoignages généraux
+ */
+
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+:root {
+    --avis-gold: #FFD700;
+    --avis-dark: #2c3e50;
+    --avis-success: #27ae60;
+    --avis-border: #ddd;
+    --avis-radius: 8px;
+}
+
+/* ============================================
+   SHORTCODE : [derniers_avis]
+   ============================================ */
+.derniers-avis-shortcode {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.derniers-avis-shortcode h3 {
+    color: var(--avis-dark);
+    border-bottom: 3px solid var(--avis-gold);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.avis-mini {
+    border-left: 3px solid var(--avis-gold);
+    padding-left: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.avis-mini:hover {
+    transform: translateX(5px);
+}
+
+.avis-mini p {
+    margin: 5px 0;
+}
+
+/* ============================================
+   SHORTCODE : [note_moyenne]
+   ============================================ */
+.note-moyenne {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: var(--avis-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ============================================
+   FORMULAIRE : [formulaire_avis]
+   ============================================ */
+.formulaire-avis-wrapper {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid var(--avis-border);
+    border-radius: var(--avis-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.formulaire-avis-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--avis-dark);
+    text-align: center;
+}
+
+.avis-form p {
+    margin-bottom: 20px;
+}
+
+.avis-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--avis-dark);
+}
+
+.avis-form input[type="text"],
+.avis-form input[type="email"],
+.avis-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--avis-border);
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.avis-form input:focus,
+.avis-form textarea:focus {
+    outline: none;
+    border-color: var(--avis-gold);
+}
+
+.avis-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Système d'étoiles */
+.rating-stars {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating-stars label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.star-select {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd;
+    transition: all 0.3s ease;
+}
+
+.star-select:hover,
+.star-select.active {
+    color: var(--avis-gold);
+    transform: scale(1.2);
+}
+
+#rating-text {
+    margin-left: 15px;
+    font-weight: bold;
+    color: var(--avis-gold);
+    font-size: 16px;
+}
+
+/* Bouton submit */
+.avis-form button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.avis-form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.avis-form button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Messages de succès/erreur */
+.notice {
+    padding: 15px;
+    border-left: 4px solid;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.notice-success {
+    background: #d4edda;
+    border-color: var(--avis-success);
+    color: #155724;
+}
+
+.notice-error {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* ============================================
+   BANDEAU FOOTER (class-widget.php)
+   ============================================ */
+.cs-temoignage-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+}
+
+.cs-temoignage-footer h3 {
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cs-temoignage-footer blockquote {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    padding: 0 20px;
+    border: none;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .formulaire-avis-wrapper {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .derniers-avis-shortcode {
+        padding: 0 15px;
+    }
+    
+    .rating-stars {
+        flex-wrap: wrap;
+    }
+    
+    .star-select {
+        font-size: 24px;
+    }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.avis-mini,
+.formulaire-avis-wrapper {
+    animation: fadeIn 0.5s ease;
+}
