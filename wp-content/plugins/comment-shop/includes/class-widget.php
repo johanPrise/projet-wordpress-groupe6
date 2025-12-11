@@ -21,12 +21,12 @@ class CS_Widget {
     }
     
     private function __construct() {
-        // HOOK : Ajouter le widget automatiquement dans le footer
-        add_action('wp_footer', array($this, 'afficher_temoignage_footer'));
+        // HOOK : Ajouter le widget automatiquement avant le footer
+        add_action('get_footer', array($this, 'afficher_temoignage_footer'));
     }
     
     /**
-     * HOOK : Afficher un témoignage aléatoire dans le footer du site
+     * HOOK : Afficher un témoignage aléatoire avant le footer du site
      */
     public function afficher_temoignage_footer() {
         // Ne pas afficher dans l'admin

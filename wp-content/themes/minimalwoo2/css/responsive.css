@@ -1,0 +1,119 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablettes */
+@media (max-width: 992px) {
+  .content-area {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .woocommerce ul.products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-images-section {
+    position: static;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .woocommerce ul.products {
+    grid-template-columns: 1fr;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .woocommerce div.product .product_title {
+    font-size: 24px;
+  }
+
+  .single-post article {
+    padding: 20px;
+  }
+
+  .entry-content {
+    font-size: 16px;
+  }
+
+  /* Home page mobile */
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-btn, .cta-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .about-section h2,
+  .featured-products h2 {
+    font-size: 28px;
+  }
+
+  .cta-section {
+    padding: 50px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 26px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .woocommerce ul.products li.product img {
+    height: 200px;
+  }
+
+  .cart-link {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
