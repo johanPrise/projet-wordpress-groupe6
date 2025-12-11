@@ -1,0 +1,133 @@
+/* ========================================
+   HEADER
+   ======================================== */
+.site-header {
+  background: var(--light-bg);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.site-title a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.main-navigation {
+  flex: 1;
+}
+
+/* Navigation principale - Cibler toutes les variations WordPress */
+.main-navigation ul,
+.main-navigation ul.nav-menu,
+.main-navigation .menu,
+.nav-menu,
+nav ul {
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: row !important; /* Forcer horizontal */
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-navigation ul li,
+.main-navigation .menu-item,
+.nav-menu > li,
+nav ul > li {
+  position: relative;
+  display: inline-block !important; /* Pas inline-flex pour éviter les conflits */
+  margin: 0 !important;
+  float: none !important; /* Au cas où WordPress applique des floats */
+}
+
+/* Sous-menus (dropdowns) - doivent être en block */
+.main-navigation ul ul,
+.main-navigation ul.nav-menu ul.sub-menu,
+.nav-menu .sub-menu {
+  display: none !important;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px 0 !important;
+  min-width: 200px;
+  z-index: 9999;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+.main-navigation ul li:hover > ul,
+.nav-menu li:hover > .sub-menu {
+  display: block !important;
+}
+
+.main-navigation ul ul li,
+.nav-menu .sub-menu li {
+  display: block !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.main-navigation a,
+.nav-menu a {
+  font-weight: 500;
+  padding: 8px 15px;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.3s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.main-navigation a:hover,
+.nav-menu a:hover {
+  background: var(--accent-color);
+  color: #fff !important;
+}
+
+.header-cart {
+  position: relative;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: var(--secondary-color);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 20px;
+}
+
+.cart-count {
+  background: #fff;
+  color: var(--secondary-color);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+}

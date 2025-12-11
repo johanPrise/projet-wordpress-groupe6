@@ -38,7 +38,7 @@ class Comment_Shop{
     }
 
     private function load_dependencies() {
-        // Charger les classes avec vérification
+        // Charger les classes
         $files = array(
             'includes/class-cpt-avis.php',
             'includes/class-metaboxes.php',

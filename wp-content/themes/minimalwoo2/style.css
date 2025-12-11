@@ -1,0 +1,17 @@
+/*
+Theme Name: Vetements Theme
+Author: Alicia
+Description: Thème pour boutique de vêtements avec WooCommerce
+Version: 1.0
+Text Domain: simpliste-vetements
+*/
+
+/* ========================================
+   IMPORTS CSS MODULAIRES
+   ======================================== */
+@import url('css/variables.css');
+@import url('css/header.css');
+@import url('css/footer.css');
+@import url('css/home.css');
+@import url('css/woocommerce.css');
+@import url('css/responsive.css');

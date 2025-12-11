@@ -4,7 +4,7 @@
  */
 
 /* ============================================
-   VARIABLES CSS
+   VARIABLES CSS - IMPORTANT pour priorité
    ============================================ */
 :root {
     --avis-gold: #FFD700;
@@ -18,204 +18,228 @@
    SHORTCODE : [derniers_avis]
    ============================================ */
 .derniers-avis-shortcode {
-    max-width: 800px;
-    margin: 30px auto;
+    max-width: 800px !important;
+    margin: 30px auto !important;
+    padding: 20px !important;
 }
 
 .derniers-avis-shortcode h3 {
-    color: var(--avis-dark);
-    border-bottom: 3px solid var(--avis-gold);
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    color: var(--avis-dark) !important;
+    border-bottom: 3px solid var(--avis-gold) !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 25px !important;
+    font-size: 1.5rem !important;
 }
 
 .avis-mini {
-    border-left: 3px solid var(--avis-gold);
-    padding-left: 15px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease;
+    border-left: 3px solid var(--avis-gold) !important;
+    padding-left: 15px !important;
+    margin-bottom: 20px !important;
+    transition: transform 0.2s ease !important;
+    background: #fafafa !important;
+    padding: 15px !important;
+    border-radius: 4px !important;
 }
 
 .avis-mini:hover {
-    transform: translateX(5px);
+    transform: translateX(5px) !important;
 }
 
 .avis-mini p {
-    margin: 5px 0;
+    margin: 5px 0 !important;
+    line-height: 1.6 !important;
+}
+
+.avis-mini .stars {
+    color: var(--avis-gold) !important;
+    font-size: 1.2rem !important;
 }
 
 /* ============================================
    SHORTCODE : [note_moyenne]
    ============================================ */
 .note-moyenne {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #f8f9fa;
-    padding: 15px 20px;
-    border-radius: var(--avis-radius);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: #f8f9fa !important;
+    padding: 15px 20px !important;
+    border-radius: var(--avis-radius) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    font-size: 1.1rem !important;
+}
+
+.note-moyenne .stars {
+    color: var(--avis-gold) !important;
+    font-size: 1.3rem !important;
 }
 
 /* ============================================
    FORMULAIRE : [formulaire_avis]
    ============================================ */
 .formulaire-avis-wrapper {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 30px;
-    background: #fff;
-    border: 1px solid var(--avis-border);
-    border-radius: var(--avis-radius);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 700px !important;
+    margin: 30px auto !important;
+    padding: 30px !important;
+    background: #fff !important;
+    border: 1px solid var(--avis-border) !important;
+    border-radius: var(--avis-radius) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
 
 .formulaire-avis-wrapper h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: var(--avis-dark);
-    text-align: center;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    color: var(--avis-dark) !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
 }
 
 .avis-form p {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .avis-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: var(--avis-dark);
+    display: block !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+    color: var(--avis-dark) !important;
 }
 
 .avis-form input[type="text"],
 .avis-form input[type="email"],
 .avis-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--avis-border);
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: inherit;
-    transition: border-color 0.3s ease;
+    width: 100% !important;
+    padding: 12px !important;
+    border: 1px solid var(--avis-border) !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    font-family: inherit !important;
+    transition: border-color 0.3s ease !important;
 }
 
 .avis-form input:focus,
 .avis-form textarea:focus {
-    outline: none;
-    border-color: var(--avis-gold);
+    outline: none !important;
+    border-color: var(--avis-gold) !important;
 }
 
 .avis-form textarea {
-    min-height: 120px;
-    resize: vertical;
+    min-height: 120px !important;
+    resize: vertical !important;
 }
 
 /* Système d'étoiles */
 .rating-stars {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+    display: flex !important;
+    gap: 10px !important;
+    align-items: center !important;
+    margin: 15px 0 !important;
 }
 
 .rating-stars label {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    cursor: pointer !important;
 }
 
 .star-select {
-    font-size: 30px;
-    cursor: pointer;
-    color: #ddd;
-    transition: all 0.3s ease;
+    font-size: 30px !important;
+    cursor: pointer !important;
+    color: #ddd !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
 }
 
 .star-select:hover,
 .star-select.active {
-    color: var(--avis-gold);
-    transform: scale(1.2);
+    color: var(--avis-gold) !important;
+    transform: scale(1.2) !important;
 }
 
 #rating-text {
-    margin-left: 15px;
-    font-weight: bold;
-    color: var(--avis-gold);
-    font-size: 16px;
+    margin-left: 15px !important;
+    font-weight: bold !important;
+    color: var(--avis-gold) !important;
+    font-size: 16px !important;
 }
 
 /* Bouton submit */
 .avis-form button[type="submit"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: block;
-    margin: 30px auto 0;
+    background: #000000 !important;
+    color: white !important;
+    padding: 15px 40px !important;
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+    font-size: 0.875rem !important;
 }
 
 .avis-form button[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
-
-.avis-form button[type="submit"]:active {
-    transform: translateY(0);
+    background: transparent !important;
+    color: #000 !important;
 }
 
 /* Messages de succès/erreur */
 .notice {
-    padding: 15px;
-    border-left: 4px solid;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 15px !important;
+    border-left: 4px solid !important;
+    margin-bottom: 20px !important;
+    border-radius: 5px !important;
 }
 
 .notice-success {
-    background: #d4edda;
-    border-color: var(--avis-success);
-    color: #155724;
+    background: #d4edda !important;
+    border-color: var(--avis-success) !important;
+    color: #155724 !important;
 }
 
 .notice-error {
-    background: #f8d7da;
-    border-color: #dc3545;
-    color: #721c24;
+    background: #f8d7da !important;
+    border-color: #dc3545 !important;
+    color: #721c24 !important;
 }
 
 /* ============================================
    BANDEAU FOOTER (class-widget.php)
    ============================================ */
 .cs-temoignage-footer {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    background: #000000 !important;
+    color: white !important;
+    padding: 30px 20px !important;
+    text-align: center !important;
+    margin-top: 50px !important;
+    border-top: 1px solid #e0e0e0 !important;
 }
 
 .cs-temoignage-footer h3 {
-    color: white;
-    margin: 0 0 15px 0;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    color: white !important;
+    margin: 0 0 15px 0 !important;
+    font-size: 0.875rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
+    font-weight: 300 !important;
 }
 
 .cs-temoignage-footer blockquote {
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.6;
-    margin: 0 0 15px 0;
-    padding: 0 20px;
-    border: none;
+    font-size: 1.125rem !important;
+    font-style: italic !important;
+    line-height: 1.6 !important;
+    margin: 0 0 15px 0 !important;
+    padding: 0 20px !important;
+    border: none !important;
+    font-weight: 300 !important;
+}
+
+.cs-temoignage-footer .stars {
+    color: var(--avis-gold) !important;
+    font-size: 1.2rem !important;
 }
 
 /* ============================================
