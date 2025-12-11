@@ -1,0 +1,25 @@
+/*
+Theme Name: Vetements Theme
+Author: Alicia
+Description: Thème pour boutique de vêtements
+Version: 1.0
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+header, footer {
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
