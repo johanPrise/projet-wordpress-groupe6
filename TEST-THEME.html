@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TEST - MiniMalWoo + Comment Shop</title>
+</head>
+<body>
+<h1>✅ CHECKLIST DE TEST</h1>
+
+<h2>1️⃣ THÈME MINIMALWOO</h2>
+<ul>
+    <li>Admin → Apparence → Thèmes</li>
+    <li>Activer "MiniMalWoo"</li>
+    <li>Vérifier : Header noir & blanc ✓</li>
+    <li>Vérifier : Navigation uppercase ✓</li>
+    <li>Vérifier : Bouton dark mode (🌙) ✓</li>
+</ul>
+
+<h2>2️⃣ WOOCOMMERCE - PRODUITS</h2>
+<ul>
+    <li>Aller sur : /boutique/ ou /shop/</li>
+    <li>Vérifier : Grid 3 colonnes ✓</li>
+    <li>Vérifier : Images noir & blanc (grayscale) ✓</li>
+    <li>Vérifier : Couleur au hover ✓</li>
+    <li>Vérifier : Bouton noir "AJOUTER AU PANIER" ✓</li>
+</ul>
+
+<h3>Si pas de produits visibles :</h3>
+<ul>
+    <li>Admin → WooCommerce → Produits</li>
+    <li>Créer 2-3 produits test avec images</li>
+    <li>Statut : "Publié"</li>
+    <li>Prix : 10€, 20€, 30€</li>
+</ul>
+
+<h2>3️⃣ PLUGIN COMMENT SHOP - CSS</h2>
+<ul>
+    <li>Admin → Pages → Ajouter</li>
+    <li>Titre : "Test Témoignages"</li>
+    <li>Contenu : Ajouter ces shortcodes :</li>
+</ul>
+
+<pre>
+[formulaire_avis]
+
+[derniers_avis limit="5"]
+
+[note_moyenne]
+</pre>
+
+<h3>Vérifications CSS :</h3>
+<ul>
+    <li>Formulaire : bordure, padding, étoiles cliquables ✓</li>
+    <li>Derniers avis : bordure gauche dorée ✓</li>
+    <li>Note moyenne : badge gris avec étoiles ✓</li>
+    <li>Bouton submit : noir, uppercase, hover inversion ✓</li>
+</ul>
+
+<h2>4️⃣ CRÉER TÉMOIGNAGES TEST</h2>
+<ul>
+    <li>Admin → 💬 Témoignages → Ajouter</li>
+    <li>Titre : "Super produit !"</li>
+    <li>Contenu : "Très satisfait de mon achat"</li>
+    <li>Email : test@exemple.com</li>
+    <li>Note : 5 étoiles</li>
+    <li>Publier</li>
+    <li>Créer 2-3 témoignages</li>
+</ul>
+
+<h2>5️⃣ VÉRIFIER INTÉGRATION</h2>
+<ul>
+    <li>Homepage : Doit afficher 3 témoignages auto (Hook 1) ✓</li>
+    <li>Footer : Bandeau noir avec 1 témoignage aléatoire ✓</li>
+    <li>Page produit : Section témoignages en bas ✓</li>
+</ul>
+
+<h2>🐛 SI PROBLÈMES PERSISTENT</h2>
+
+<h3>Produits invisibles :</h3>
+<pre>
+1. Vider cache : Admin → WooCommerce → Statut → Outils → Vider cache
+2. Permaliens : Admin → Réglages → Permaliens → Enregistrer (2x)
+3. Vérifier statut produits : "Publié" + stock > 0
+</pre>
+
+<h3>CSS ne charge pas :</h3>
+<pre>
+1. Vider cache navigateur (Ctrl+Shift+R)
+2. Désactiver/Réactiver plugin Comment Shop
+3. Inspecter élément (F12) → Network → Vérifier avis-styles.css charge
+4. Console erreurs JS
+</pre>
+
+<h3>Dark mode ne fonctionne pas :</h3>
+<pre>
+1. Vérifier fichier : /themes/minimalwoo/assets/js/theme.js existe
+2. Vérifier fichier : /themes/minimalwoo/assets/css/dark-mode.css existe
+3. Console navigateur (F12) : Erreurs JavaScript ?
+</pre>
+
+<h2>📸 CAPTURES POUR PDF</h2>
+<ol>
+    <li>Homepage avec hero + 3 témoignages</li>
+    <li>Page boutique (grid produits noir & blanc)</li>
+    <li>Page produit individuelle</li>
+    <li>Formulaire témoignage</li>
+    <li>Admin : liste témoignages</li>
+    <li>Footer avec bandeau témoignage</li>
+</ol>
+
+<hr>
+<p><strong>Deadline : Aujourd'hui (11 décembre 2025)</strong></p>
+<p>Bon courage ! 🚀</p>
+
+</body>
+</html>
